@@ -104,5 +104,8 @@ setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks
 setopt SHARE_HISTORY         # Share history between different shells
 setopt APPEND_HISTORY        # Append to history file, don't overwrite
 
+# Key bindings
+bindkey '^[[1;3C' forward-word # Option key + right arrow
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
