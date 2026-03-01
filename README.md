@@ -31,11 +31,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 https://github.com/adesai773/dotfiles.git
 cd ~/.dotfiles
 
-# 2. Remove the default .zshrc created by the OMZ installer to avoid conflicts
-rm ~/.zshrc
+# 2. Remove the default files to avoid Stow conflicts
+rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc
 
-# 3. Use Stow to link the files (This assumes your files are inside a folder named 'zsh')
-stow zsh
+# 3. Use Stow to link the files
+stow zsh git vim
 ```
 
 ## 4. How to update when you change your config files
