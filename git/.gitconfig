@@ -1,0 +1,5 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Anant Desai
+	email = adesai773@gmail.com
