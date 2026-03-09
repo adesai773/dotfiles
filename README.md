@@ -25,7 +25,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-## 3. Setup for syncing with this dotfiles repo
+## 3. Setup for syncing Zsh, Git, and Vim with this dotfiles repo
 ```bash
 # 1. Clone this repo
 https://github.com/adesai773/dotfiles.git
@@ -38,7 +38,28 @@ rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc
 stow zsh git vim
 ```
 
-## 4. How to update when you change your config files
+## 4. VS Code Setup
+Install the following plugins:
+
+- **C/C++**
+- **C/C++ Extension Pack**
+- **Catppuccin for VSCode**
+- **Claude Code for VS Code**
+- **GitLens — Git supercharged**
+- **Night Owl**
+- **Python**
+- **Ruff** 
+
+```bash
+# Remove default settings file to avoid Stow conflicts
+rm ~/Library/Application\ Support/Code/User/settings.json
+
+# Note, we stow the configs in the vscode/ dir to the target dir
+# "~/Library/Application\ Support/Code/User" in order to flatten the directory structure
+stow -t ~/Library/Application\ Support/Code/User vscode
+```
+
+## How to update when you change your config files
 ```bash
 cd ~/.dotfiles
 git add .
