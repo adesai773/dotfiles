@@ -8,6 +8,7 @@ Before linking files, install the following:
 - **Zsh**: `brew install zsh` (macOS) or `sudo apt install zsh` (Linux)
 - **Stow**: `brew install stow` or `sudo apt install stow`
 - **FZF**: `brew install fzf` (Required by your .zshrc plugins)
+- **bat**: `brew install bat`
 
 ## 2. Install Oh My Zsh & Theme
 Run the following to install the framework and the Powerlevel10k theme:
