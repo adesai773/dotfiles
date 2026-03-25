@@ -67,6 +67,19 @@ rm ~/Library/Application\ Support/Code/User/settings.json
 stow -t ~/Library/Application\ Support/Code/User vscode
 ```
 
+## How to add new dotfiles to repo
+```bash
+# Create matching directory structure
+mkdir -p ~/.dotfiles/shell
+
+# Move original file into .dotfiles repo
+mv ~/.hushlogin ~/.dotfiles/shell/
+
+# Stow the package
+cd ~/.dotfiles 
+stow shell
+```
+
 ## How to update when you change your config files
 ```bash
 cd ~/.dotfiles
