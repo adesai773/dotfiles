@@ -27,8 +27,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ## 3. Setup for syncing Zsh, Git, and Vim with this dotfiles repo
 ```bash
-# 1. Clone this repo
-https://github.com/adesai773/dotfiles.git
+# 0. Setup SSH Keys if cloning over SSH. (If cloning with a Public Access Token, then no need for SSH Keys).
+
+# 1. Clone this repo with SSH (or Public Access Token)
+git clone git@github.com:adesai773/dotfiles.git ~/.dotfiles
+# Note: Alternatively, can clone with PAT over https: git clone https://github.com/adesai773/dotfiles.git ~/.dotfiles
+# and submit a Public Access Token when it asks for password.
+
 cd ~/.dotfiles
 
 # 2. Remove the default files to avoid Stow conflicts
