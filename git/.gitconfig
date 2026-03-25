@@ -3,3 +3,12 @@
 [user]
 	name = Anant Desai
 	email = adesai773@gmail.com
+[fetch]
+	prune = true
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[pull]
+    rebase = true
+[branch "main"]
+    rebase = false
+    mergeoptions = --ff-only
