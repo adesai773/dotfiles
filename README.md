@@ -8,7 +8,8 @@ Before linking files, install the following:
 - **Zsh**: `brew install zsh` (macOS) or `sudo apt install zsh` (Linux)
 - **Stow**: `brew install stow` or `sudo apt install stow`
 - **FZF**: `brew install fzf` (Required by your .zshrc plugins)
-- **bat**: `brew install bat`
+- **tmux**: `brew install tmux` 
+- **bat**: `brew install bat` (Just a nice alternative to cat)
 
 ## 2. Install Oh My Zsh & Theme
 Run the following to install the framework and the Powerlevel10k theme:
@@ -40,10 +41,10 @@ git clone git@github.com:adesai773/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 # 2. Remove the default files to avoid Stow conflicts
-rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc
+rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc ~/.tmux.conf 
 
 # 3. Use Stow to link the files
-stow zsh git vim
+stow zsh git vim shell tmux
 ```
 
 ## 4. VS Code Setup

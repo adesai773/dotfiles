@@ -112,5 +112,17 @@ bindkey '^[[1;3C' forward-word # Option key + right arrow
 
 export PATH="$HOME/.local/bin:$PATH"
 
+if [ -n "$TERMINAL_PROFILE" ]; then
+  # set the kubeconfig to the terminal profile
+  export KUBECONFIG=~/.kube/${TERMINAL_PROFILE}.yaml
+  
+  if [ -n "$KUBECONFIG" ] && [ -f "$KUBECONFIG" ]; then
+    # set the terminal badge to the terminal profile
+    printf "\033]1337;SetBadgeFormat=%s\007" "$(echo "${TERMINAL_PROFILE}" | base64)"
+    # Set tab title
+    echo -ne "\033]1;${TERMINAL_PROFILE}\007"
+  fi
+fi
+
 
 
