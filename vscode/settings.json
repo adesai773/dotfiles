@@ -15,4 +15,5 @@
     "workbench.colorTheme": "Night Owl",
     "claudeCode.preferredLocation": "panel",
     "terminal.integrated.fontFamily": "MesloLGS NF",
+    "security.workspace.trust.untrustedFiles": "open",
 }
