@@ -16,4 +16,29 @@
     "claudeCode.preferredLocation": "panel",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "git.openRepositoryInParentFolders": "always",
+    "makefile.configureOnOpen": true,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.scrollback": 100000,
 }
