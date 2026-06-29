@@ -60,6 +60,7 @@ Install the following plugins:
 - **Claude Code for VS Code**
 - **GitLens — Git supercharged**
 - **Night Owl**
+- **Everforest** (by sainnhe)
 - **Python**
 - **Ruff** 
 

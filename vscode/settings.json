@@ -12,7 +12,6 @@
             "source.organizeImports": "explicit"
         }
     },
-    "workbench.colorTheme": "Night Owl",
     "claudeCode.preferredLocation": "panel",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "security.workspace.trust.untrustedFiles": "open",
@@ -45,4 +44,27 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "python.analysis.typeCheckingMode": "strict",
+    "workbench.colorTheme": "Everforest Dark",
+    "everforest.darkContrast": "hard",
+    "workbench.colorCustomizations": {
+        "[Everforest Dark]": {
+            "editor.background": "#15181a",
+            "terminal.background": "#15181a",
+            "sideBar.background": "#101213",
+            "activityBar.background": "#0d0e0f"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Everforest Dark]": {
+            "textMateRules": [
+                {
+                    "scope": ["comment", "punctuation.definition.comment"],
+                    "settings": {
+                        "foreground": "#859289",
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        }
+    }
 }
