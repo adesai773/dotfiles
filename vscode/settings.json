@@ -41,4 +41,8 @@
     "makefile.configureOnOpen": true,
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.scrollback": 100000,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.analysis.typeCheckingMode": "strict",
 }

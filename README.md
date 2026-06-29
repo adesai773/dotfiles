@@ -11,6 +11,9 @@ Before linking files, install the following:
 - **tmux**: `brew install tmux` 
 - **bat**: `brew install bat` (Just a nice alternative to cat)
 
+- **ghostty**: `brew install ghostty` (ultra fast mac-optimized terminal)
+- **opencode**: `curl -fsSL https://opencode.ai/install | bash` 
+
 ## 2. Install Oh My Zsh & Theme
 Run the following to install the framework and the Powerlevel10k theme:
 ```bash
@@ -27,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-## 3. Setup for syncing Zsh, Git, and Vim with this dotfiles repo
+## 3. Setup for syncing zsh, git, vim, tmux, ghostty, opencode etc. with this dotfiles repo
 ```bash
 # 0. Setup SSH Keys if cloning over SSH. (If cloning with a Public Access Token, then no need for SSH Keys).
 
@@ -42,7 +45,7 @@ cd ~/.dotfiles
 rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc ~/.tmux.conf 
 
 # 3. Use Stow to link the files
-stow zsh git vim shell tmux
+stow zsh git vim shell tmux ghostty
 
 # Note: You may have to run `p10k configure` in order to download the
 # recommended "Meslo Nerd Font" if it wasn't already downloaded
@@ -67,6 +70,19 @@ rm ~/Library/Application\ Support/Code/User/settings.json
 # Note, we stow the configs in the vscode/ dir to the target dir
 # "~/Library/Application\ Support/Code/User" in order to flatten the directory structure
 stow -t ~/Library/Application\ Support/Code/User vscode
+```
+
+## 5. opencode Setup
+opencode reads config from `~/.config/opencode/`. This package mirrors that
+path and stows `opencode.json` and `tui.json`.
+
+```bash
+# Remove any existing opencode configs to avoid Stow conflicts
+rm -f ~/.config/opencode/opencode.json ~/.config/opencode/tui.json
+
+# Stow the configs
+cd ~/.dotfiles
+stow opencode
 ```
 
 ## How to add new dotfiles to repo
