@@ -32,5 +32,8 @@
       "url": "https://drivemcp.googleapis.com/mcp/v1",
       "enabled": true
     }
-  }
+  },
+  "plugin": [
+    "/Users/adesai/.claude/plugins/marketplaces/ponytail/.opencode/plugins/ponytail.mjs"
+  ]
 }

@@ -7,7 +7,8 @@
     "npm:pi-simplify",
     "npm:pi-fabric",
     "npm:@termdraw/pi",
-    "npm:@nteract/pi"
+    "npm:@nteract/pi",
+    "git:github.com/shalinkpatel/pi-perf"
   ],
   "defaultProvider": "baseten",
   "defaultModel": "moonshotai/Kimi-K3",
