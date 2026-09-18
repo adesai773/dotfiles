@@ -101,6 +101,20 @@ ln -s ~/.claude/agents ~/.pi/agent/agents   # Claude Code agents as pi subagents
 # then /mcp-auth <server> once per MCP server
 ```
 
+## 7. ponytail Setup
+[ponytail](https://github.com/DietrichGebert/ponytail) is installed per host (Claude Code below, pi in §6).
+The stowed `~/.config/ponytail/config.json` sets `ultra` as the default mode for every host.
+
+```bash
+# Claude Code plugin (hooks need node on PATH: brew install node)
+claude plugin marketplace add DietrichGebert/ponytail
+claude plugin install ponytail@ponytail
+
+# Default mode
+rm -f ~/.config/ponytail/config.json
+cd ~/.dotfiles && stow ponytail
+```
+
 ## How to add new dotfiles to repo
 ```bash
 # Create matching directory structure
