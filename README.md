@@ -14,6 +14,7 @@ Before linking files, install the following:
 - **ghostty**: `brew install ghostty` (ultra fast mac-optimized terminal)
 - **opencode**: `curl -fsSL https://opencode.ai/install | bash` 
 - **pi**: `curl -fsSL https://pi.dev/install.sh | sh`
+- **bun**: `brew install oven-sh/bun/bun` (needed by pi's `/termdraw`)
 
 ## 2. Install Oh My Zsh & Theme
 Run the following to install the framework and the Powerlevel10k theme:

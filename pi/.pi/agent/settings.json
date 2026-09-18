@@ -2,7 +2,12 @@
   "packages": [
     "npm:pi-mcp-adapter",
     "npm:@tintinweb/pi-subagents",
-    "git:github.com/DietrichGebert/ponytail"
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:pi-web-access",
+    "npm:pi-simplify",
+    "npm:pi-fabric",
+    "npm:@termdraw/pi",
+    "npm:@nteract/pi"
   ],
   "defaultProvider": "baseten",
   "defaultModel": "moonshotai/Kimi-K3",
