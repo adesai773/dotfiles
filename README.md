@@ -13,6 +13,7 @@ Before linking files, install the following:
 
 - **ghostty**: `brew install ghostty` (ultra fast mac-optimized terminal)
 - **opencode**: `curl -fsSL https://opencode.ai/install | bash` 
+- **pi**: `curl -fsSL https://pi.dev/install.sh | sh`
 
 ## 2. Install Oh My Zsh & Theme
 Run the following to install the framework and the Powerlevel10k theme:
@@ -43,9 +44,10 @@ cd ~/.dotfiles
 
 # 2. Remove the default files to avoid Stow conflicts
 rm ~/.zshrc ~/.zprofile ~/.gitconfig ~/.vimrc ~/.tmux.conf 
+mkdir -p ~/.pi/agent && rm -f ~/.pi/agent/settings.json
 
 # 3. Use Stow to link the files
-stow zsh git vim shell tmux ghostty
+stow zsh git vim shell tmux ghostty pi
 
 # Note: You may have to run `p10k configure` in order to download the
 # recommended "Meslo Nerd Font" if it wasn't already downloaded
@@ -84,6 +86,19 @@ rm -f ~/.config/opencode/opencode.json ~/.config/opencode/tui.json
 # Stow the configs
 cd ~/.dotfiles
 stow opencode
+```
+
+## 6. pi Setup
+`pi` stows `~/.pi/agent/settings.json`; `auth.json` (tokens) and `~/.config/mcp/mcp.json` (MCP servers) are untracked.
+
+```bash
+pi install npm:pi-mcp-adapter
+pi install npm:@tintinweb/pi-subagents
+pi install git:github.com/DietrichGebert/ponytail
+ln -s ~/.claude/agents ~/.pi/agent/agents   # Claude Code agents as pi subagents
+
+# In pi: /login (Anthropic/OpenAI) or add a baseten api_key entry to ~/.pi/agent/auth.json,
+# then /mcp-auth <server> once per MCP server
 ```
 
 ## How to add new dotfiles to repo
