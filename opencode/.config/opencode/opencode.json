@@ -34,6 +34,7 @@
     }
   },
   "plugin": [
-    "/Users/adesai/.claude/plugins/marketplaces/ponytail/.opencode/plugins/ponytail.mjs"
+    "/Users/adesai/.claude/plugins/marketplaces/ponytail/.opencode/plugins/ponytail.mjs",
+    "/Users/adesai/.claude/plugins/marketplaces/caveman/src/plugins/opencode/plugin.js"
   ]
 }

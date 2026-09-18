@@ -8,7 +8,8 @@
     "npm:pi-fabric",
     "npm:@termdraw/pi",
     "npm:@nteract/pi",
-    "git:github.com/shalinkpatel/pi-perf"
+    "git:github.com/shalinkpatel/pi-perf",
+    "git:github.com/adesai773/pi-caveman-config"
   ],
   "defaultProvider": "baseten",
   "defaultModel": "moonshotai/Kimi-K3",

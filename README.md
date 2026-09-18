@@ -116,6 +116,20 @@ rm -f ~/.config/ponytail/config.json
 cd ~/.dotfiles && stow ponytail
 ```
 
+## 8. caveman Setup
+[caveman](https://github.com/JuliusBrussee/caveman) makes agent prose terse. Claude Code, opencode, and pi (via
+[pi-caveman-config](https://github.com/adesai773/pi-caveman-config)) all read the stowed `~/.config/caveman/config.json`;
+edit `defaultMode` (`lite|full|ultra`) there to change every host.
+
+```bash
+claude plugin marketplace add JuliusBrussee/caveman
+claude plugin install caveman@caveman
+# opencode plugin + pi package are already in the stowed opencode.json / pi settings.json
+
+rm -rf ~/.config/caveman
+cd ~/.dotfiles && stow caveman
+```
+
 ## How to add new dotfiles to repo
 ```bash
 # Create matching directory structure
