@@ -8,8 +8,8 @@
     "npm:pi-fabric",
     "npm:@termdraw/pi",
     "npm:@nteract/pi",
-    "git:github.com/shalinkpatel/pi-perf",
-    "git:github.com/adesai773/pi-caveman-config"
+    "git:github.com/adesai773/pi-caveman-config",
+    "git:github.com/adesai773/pi-perf@a19624b"
   ],
   "defaultProvider": "baseten",
   "defaultModel": "moonshotai/Kimi-K3",
@@ -18,5 +18,8 @@
     "/Users/adesai/.claude/skills/synced/9d012e66-95a6-4af5-be3a-36acb0df0433_ecb99564-6c1c-47d6-b575-b617d2fb33ba"
   ],
   "lastChangelogVersion": "0.85.1",
-  "theme": "dark"
+  "theme": "dark",
+  "piPerf": {
+    "placement": "belowEditor"
+  }
 }
