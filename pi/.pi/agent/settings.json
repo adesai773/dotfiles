@@ -14,9 +14,6 @@
   "defaultProvider": "baseten",
   "defaultModel": "moonshotai/Kimi-K3",
   "defaultThinkingLevel": "high",
-  "skills": [
-    "/Users/adesai/.claude/skills/synced/9d012e66-95a6-4af5-be3a-36acb0df0433_ecb99564-6c1c-47d6-b575-b617d2fb33ba"
-  ],
   "lastChangelogVersion": "0.86.0",
   "theme": "dark",
   "piPerf": {
