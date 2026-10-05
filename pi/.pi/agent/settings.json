@@ -9,14 +9,18 @@
     "npm:@termdraw/pi",
     "npm:@nteract/pi",
     "git:github.com/adesai773/pi-caveman-config",
-    "git:github.com/adesai773/pi-perf@a19624b"
+    "git:github.com/adesai773/pi-perf@a19624be31872bba3e0cfd9e7b8e1b1f8559ebee"
   ],
-  "defaultProvider": "baseten",
-  "defaultModel": "moonshotai/Kimi-K3",
+  "defaultProvider": "anthropic",
+  "defaultModel": "claude-opus-5-5",
   "defaultThinkingLevel": "high",
-  "lastChangelogVersion": "0.86.0",
+  "lastChangelogVersion": "1.0.3",
   "theme": "dark",
   "piPerf": {
     "placement": "belowEditor"
-  }
+  },
+  "extensions": [
+    "-builtin:mcp"
+  ],
+  "deviceId": "7a54eac8-2a4b-4b52-a97c-2ddfedb35a5c"
 }
