@@ -9,12 +9,13 @@
     "npm:@termdraw/pi",
     "npm:@nteract/pi",
     "git:github.com/adesai773/pi-caveman-config",
-    "git:github.com/adesai773/pi-perf@a19624be31872bba3e0cfd9e7b8e1b1f8559ebee"
+    "git:github.com/adesai773/pi-perf@a19624be31872bba3e0cfd9e7b8e1b1f8559ebee",
+    "npm:pi-daybreak-param"
   ],
   "defaultProvider": "anthropic",
   "defaultModel": "claude-opus-5-5",
   "defaultThinkingLevel": "high",
-  "lastChangelogVersion": "1.0.3",
+  "lastChangelogVersion": "1.1.0",
   "theme": "dark",
   "piPerf": {
     "placement": "belowEditor"
